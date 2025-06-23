@@ -342,7 +342,6 @@ body {
         max-width: 270px;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
     }
     &__title {
         font-size: 1.25rem;
@@ -375,6 +374,116 @@ body {
         color: #000;
         margin-bottom: 10px;
         font-weight: 400;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header__main {
+        max-width: 900px;
+        padding: 20px 16px;
+    }
+    .header__nav-list {
+        gap: 36px;
+    }
+    .header__button {
+        min-width: 110px;
+        padding: 8px 0;
+        font-size: 14px;
+    }
+    .header__main img {
+        width: 90px;
+        height: auto;
+    }
+    .header__nav-link {
+        font-size: 15px;
+    }
+    body {
+        font-size: 0.95rem;
+    }
+    .about__container,
+    .products__container {
+        max-width: 900px;
+        padding: 0 16px;
+    }
+    .about__container {
+        gap: 30px;
+    }
+    .products__item {
+        width: 210px;
+        min-width: 170px;
+    }
+    .footer__container {
+        max-width: 900px;
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 700px) {
+    .header__main {
+        flex-direction: column;
+        gap: 18px;
+        max-width: 100%;
+        padding: 14px 8px;
+    }
+    .header__nav-list {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header__actions {
+        gap: 18px;
+    }
+    .about__container,
+    .products__container,
+    .footer__container {
+        max-width: 100%;
+        padding: 0 8px;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .about__container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .about__image-wrap {
+        min-width: 0;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .about__image {
+        max-width: 100%;
+    }
+    .products__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+    .products__item {
+        width: 100%;
+        min-width: 0;
+        max-width: 340px;
+    }
+    .footer__container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
+    .footer {
+        font-size: 0.95rem;
+        padding: 24px 0;
+    }
+}
+
+@media (max-width: 1400px) {
+    .header__main,
+    .about__container,
+    .products__container,
+    .footer__container {
+        max-width: 98vw;
+    }
+    .products__item {
+        width: 200px;
     }
 }
 
