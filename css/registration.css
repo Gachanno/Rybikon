@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.registration-bg {
+  min-height: 100vh;
+  background: #2E7D32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registration {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 22px 16px rgba(0, 0, 0, 0.25);
+  width: 500px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.registration__logo-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 37px;
+  justify-content: flex-start;
+}
+
+.registration__logo-img {
+  width: 268px;
+  height: 53px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.registration__tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1.5rem;
+}
+
+.registration__tab {
+  padding: 0 0 6px 0;
+  color: #222;
+  font-weight: 400;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border 0.2s;
+  font-family: "Inter", sans-serif;
+}
+.registration__tab--active {
+  color: #222;
+  font-weight: 500;
+  border-bottom: 2px solid #388e3c;
+  cursor: default;
+}
+.registration__tab--link {
+  color: #388e3c;
+  font-weight: 400;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+.registration__tab--link:hover {
+  text-decoration: underline;
+}
+
+.registration__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.registration__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.registration__label {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 400;
+  margin-bottom: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.registration__input {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  padding: 13px 25px;
+  border: 1px solid #afafaf;
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+  outline: none;
+  transition: border 0.2s;
+}
+.registration__input::-moz-placeholder {
+  color: #afafaf;
+  font-size: 0.98rem;
+}
+.registration__input::placeholder {
+  color: #afafaf;
+  font-size: 0.98rem;
+}
+.registration__input:focus {
+  border: 1.5px solid #388e3c;
+  background: #fff;
+}
+
+.registration__submit {
+  margin-top: 10px;
+  width: 100%;
+  background: #388e3c;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border: none;
+  border-radius: 4px;
+  padding: 13px 0;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(34, 34, 34, 0.08);
+}
+.registration__submit:hover {
+  background: #2e6e2e;
+}
+
+.registration__bottom {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.98rem;
+  color: #888;
+}
+
+.registration__bottom-text {
+  color: #888;
+  margin-right: 4px;
+}
+
+.registration__bottom-link {
+  color: #388e3c;
+  text-decoration: none;
+  font-weight: 500;
+  transition: -webkit-text-decoration 0.2s;
+  transition: text-decoration 0.2s;
+  transition: text-decoration 0.2s, -webkit-text-decoration 0.2s;
+}
+.registration__bottom-link:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=registration.css.map */
